@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 )
 
@@ -23,7 +22,7 @@ func returnAllArticles(w http.ResponseWriter, r *http.Request) {
 func handleRequest() {
 	http.HandleFunc("/articles", returnAllArticles)
 	fmt.Println("starting web server at http://localhost:10000/")
-	log.Fatal(http.ListenAndServe(":10000", nil))
+	http.ListenAndServe(":10000", nil)
 }
 
 func main() {

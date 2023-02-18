@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var fruits1 = []string{"Mango", "Grape", "Apple", "Watermelon", "Orange"}
+	// var fruits1 = []string{"Mango", "Grape", "Apple", "Watermelon", "Orange"}
 
-	fruits1 = fruits1[2:4]
-	fmt.Println(fruits1)
+	// fruits1 = fruits1[2:4]
+	// fmt.Println(fruits1)
 
 	// nama_array[start_index:last_index_before]
 

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/temmy-alex/final-assignment/database"
-	"github.com/temmy-alex/final-assignment/router"
+	"github.com/radityasurya/final-assignment/database"
+	"github.com/radityasurya/final-assignment/router"
 )
 
 func main() {

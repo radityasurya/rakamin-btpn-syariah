@@ -6,9 +6,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/temmy-alex/final-assignment/database"
-	"github.com/temmy-alex/final-assignment/helpers"
-	"github.com/temmy-alex/final-assignment/models"
+	"github.com/radityasurya/final-assignment/database"
+	"github.com/radityasurya/final-assignment/helpers"
+	"github.com/radityasurya/final-assignment/models"
 )
 
 var (

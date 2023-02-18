@@ -3,8 +3,9 @@ package database
 import (
 	"fmt"
 	"log"
+	"os"
 
-	"github.com/temmy-alex/final-assignment/models"
+	"github.com/radityasurya/final-assignment/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -19,7 +20,8 @@ var (
 	err      error
 )
 
-func StartDB() {
+func ConnectDB() {
+	password := os.Getenv("DB_PASSWORD")
 	config := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable", host, user, password, dbname, dbPort)
 	dsn := config
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
